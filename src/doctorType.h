@@ -5,13 +5,13 @@
 class doctorType : public personType{
   public:
     void print() const;
-    std::string getSpeciality() const;
-    void setSpeciality(std::string);
+    std::string getSpecialty() const;
+    void setSpecialty(std::string);
     doctorType(std::string f = "",std::string l = "", std::string s = "") : personType(f, l)
-      {  speciality = s;  }
+      {  specialty = s;  }
 
   private:
-    std::string speciality;
+    std::string specialty;
 };
 
 

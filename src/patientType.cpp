@@ -8,7 +8,7 @@ void patientType::print() const{
   std::cout << dateOfBirth.getMonth() << "/" << dateOfBirth.getDay() << "/" << dateOfBirth.getYear() << "\n";
 
   std::cout << "Attending Physician: ";
-  std::cout << attendingPhysician.getFirstName()  << " " << attendingPhysician.getLastName() << " "<< attendingPhysician.getSpeciality() << "\n";
+  std::cout << attendingPhysician.getFirstName()  << " " << attendingPhysician.getLastName() << " "<< attendingPhysician.getSpecialty() << "\n";
 
   std::cout << "Admission Date: ";
   std::cout << admitDate.getMonth() << "/" << admitDate.getDay() << "/"<< admitDate.getYear() << "\n";
@@ -40,7 +40,7 @@ std::string patientType::getDoctorLname() const{
   return attendingPhysician.getLastName();
 }
 std::string patientType::getDoctorSpl() const{
-  return attendingPhysician.getSpeciality();
+  return attendingPhysician.getSpecialty();
 }
 
 int patientType::getAdmDay() const{

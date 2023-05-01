@@ -3,13 +3,13 @@
 void doctorType::print() const{
   std::cout << getFirstName() << " ";
   std::cout << getLastName() << " ";
-  std::cout << speciality << "\n";
+  std::cout << specialty << "\n";
 }
 
-std::string doctorType::getSpeciality() const{
-  return speciality;
+std::string doctorType::getSpecialty() const{
+  return specialty;
 }
 
-void doctorType::setSpeciality(std::string spl){
-  speciality = spl;
+void doctorType::setSpecialty(std::string spl){
+  specialty = spl;
 }
