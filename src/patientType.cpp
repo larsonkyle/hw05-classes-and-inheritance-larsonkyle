@@ -81,6 +81,10 @@ void patientType::setInfo(std::string id, std::string fName, std::string lName, 
   dischargeDate.setDate(disChMth, disChDay, disChYear);
 }
 
+void patientType::setID(std::string id){
+  ID = id;
+}
+
 void patientType::setBirthDate(int bDay, int bMth, int bYear){
   dateOfBirth.setDate(bMth, bDay, bYear);
 }
