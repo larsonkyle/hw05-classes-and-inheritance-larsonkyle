@@ -1,22 +1,19 @@
-#ifndef PERSONTYPE_H_
-#define PERSONTYPE_H_
-#include <iostream>
-#include <string>
+#include "personType.h"
 
-class personType{
-  public:
-    void print() const;
-    std::string getFirstName() const;
-    std::string getLastName() const;
-    void setName(std::string, std::string);
-    personType(std::string first = "", std::string last = "")
-      { firstName = first;
-        lastName = last; }
+void personType::print() const{
+  std::cout << firstName << "\n";
+  std::cout << lastName << "\n";
+}
 
-  private:
-    std::string firstName;
-    std::string lastName;
-};
+std::string personType::getFirstName() const{
+  return firstName;
+}
 
+std::string personType::getLastName() const{
+  return lastName;
+}
 
-#endif
+void personType::setName(std::string first, std::string last){
+  firstName = first;
+  lastName = last;
+}
