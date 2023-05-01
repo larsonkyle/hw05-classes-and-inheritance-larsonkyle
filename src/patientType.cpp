@@ -74,7 +74,7 @@ void patientType::setInfo(std::string id, std::string fName, std::string lName, 
   dateOfBirth.setDate(bMonth, bDay, bYear);
   
   attendingPhysician.setName(docFrName, docLaName);
-  attendingPhysician.setSpeciality(docSpl);
+  attendingPhysician.setSpecialty(docSpl);
 
   admitDate.setDate(admMth, admDay, admYear);
 
@@ -92,7 +92,7 @@ void patientType::setDoctorName(std::string fName, std::string lName){
   attendingPhysician.setName(fName, lName);
 }
 void patientType::setDoctorSpl(std::string spl){
-  attendingPhysician.setSpeciality(spl);
+  attendingPhysician.setSpecialty(spl);
 }
 void patientType::setAdmDate(int admDay, int admMth, int admYear){
   admitDate.setDate(admMth, admDay, admYear);
@@ -107,7 +107,7 @@ patientType::patientType(std::string id, std::string fName, std::string lName, i
   dateOfBirth.setDate(bMonth, bDay, bYear);
   
   attendingPhysician.setName(docFrName, docLaName);
-  attendingPhysician.setSpeciality(docSpl);
+  attendingPhysician.setSpecialty(docSpl);
 
   admitDate.setDate(admMth, admDay, admYear);
 
