@@ -9,10 +9,9 @@
  
 #ifndef H_personType
 #define H_personType
-
+#include <iostream>
 #include <string>
  
-using namespace std; 
 
 class personType
 {
@@ -21,30 +20,32 @@ public:
        //Function to output the first name and last name
        //in the form firstName lastName.
   
-    void setName(string first, string last);
+    void setName(std::string first, std::string last);
        //Function to set firstName and lastName according 
        //to the parameters.
        //Postcondition: firstName = first; lastName = last
 
-    string getFirstName() const;
+    std::string getFirstName() const;
        //Function to return the first name.
        //Postcondition: The value of the data member firstName
        //               is returned.
 
-    string getLastName() const;
+    std::string getLastName() const;
        //Function to return the last name.
        //Postcondition: The value of the data member lastName
        //               is returned.
 
-    personType(string first = "", string last = "");
+    personType(std::string first = "", std::string last = "")
+      { firstName = first;
+        lastName = last; }
        //constructor
        //Sets firstName and lastName according to the parameters.
        //The default values of the parameters are empty strings.
        //Postcondition: firstName = first; lastName = last  
 
  private:
-    string firstName; //variable to store the first name
-    string lastName;  //variable to store the last name
+    std::string firstName; //variable to store the first name
+    std::string lastName;  //variable to store the last name
 };
 
 #endif
