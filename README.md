@@ -1,9 +1,9 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/qtkI_GQo)
 # HW05: Classes and Inheritance
 
-## Firstname Lastname
-TODO - Update your name in this readme
-TODO - Add github actions badge.
+## Kyle Larson
+
+![hw05](https://github.com/saddleback-college-cs1b/hw05-classes-and-inheritance-larsonkyle/actions/workflows/hw05_tests.yml/badge.svg)
 
 ## Problem Statement
 
