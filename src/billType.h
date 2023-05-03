@@ -11,6 +11,7 @@ class billType{
     double getRoomRent() const;
     double getDoctorFee() const;
     double billingAmount() const;
+    
     void setInfo(std::string, double, double, double);
     void setID(std::string id);
     void setPharmacyCharges(double);

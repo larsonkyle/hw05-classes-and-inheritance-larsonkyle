@@ -6,6 +6,7 @@ class dateType{
     int getMonth() const;
     int getDay() const;
     int getYear() const;
+    
     void setDate(int, int, int);
     dateType(int m = 0, int d = 0, int y = 0)
       {  dMonth = m;

@@ -6,6 +6,7 @@ class doctorType : public personType{
   public:
     void print() const;
     std::string getSpecialty() const;
+    
     void setSpecialty(std::string);
     doctorType(std::string f = "",std::string l = "", std::string s = "") : personType(f, l)
       {  specialty = s;  }
