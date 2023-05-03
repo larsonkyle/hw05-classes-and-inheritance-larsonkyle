@@ -62,3 +62,10 @@ void billType::setDoctorFee(double docFee){
 void billType::updateDoctorFee(double docFee){
   doctorFee += docFee;
 }
+
+billType::billType(std::string id, double phCharges , double rRent , double dFee){  
+  ID = id;
+  pharmacyCharges = phCharges;
+  roomRent = rRent;
+  doctorFee = dFee;
+}

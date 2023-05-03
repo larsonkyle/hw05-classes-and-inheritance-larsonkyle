@@ -20,11 +20,7 @@ class billType{
     void updateRoomRent(double);
     void setDoctorFee(double);
     void updateDoctorFee(double);
-    billType(std::string id = "", double phCharges = 0, double rRent = 0, double dFee = 0)
-      {  ID = id;
-         pharmacyCharges = phCharges;
-         roomRent = rRent;
-         doctorFee = dFee;  }
+    billType(std::string id = "", double phCharges = 0, double rRent = 0, double dFee = 0);
 
   private:
     std::string ID;

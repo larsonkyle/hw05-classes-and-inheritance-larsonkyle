@@ -8,8 +8,7 @@ class doctorType : public personType{
     std::string getSpecialty() const;
     
     void setSpecialty(std::string);
-    doctorType(std::string f = "",std::string l = "", std::string s = "") : personType(f, l)
-      {  specialty = s;  }
+    doctorType(std::string f = "",std::string l = "", std::string s = "");
 
   private:
     std::string specialty;

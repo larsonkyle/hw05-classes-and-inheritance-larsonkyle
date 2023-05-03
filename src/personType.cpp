@@ -17,3 +17,8 @@ void personType::setName(std::string first, std::string last){
   firstName = first;
   lastName = last;
 }
+
+personType::personType (std::string first, std::string last){
+  firstName = first;
+  lastName = last;
+}

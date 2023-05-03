@@ -17,3 +17,9 @@ void dateType::setDate(int month, int day, int year){
   dDay = day;
   dYear = year;
 }
+
+dateType::dateType(int m, int d, int y){
+  dMonth = m;
+  dDay = d;
+  dYear = y;
+}

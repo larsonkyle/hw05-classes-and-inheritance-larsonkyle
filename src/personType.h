@@ -35,9 +35,7 @@ public:
        //Postcondition: The value of the data member lastName
        //               is returned.
 
-    personType(std::string first = "", std::string last = "")
-      { firstName = first;
-        lastName = last; }
+    personType(std::string first = "", std::string last = "");
        //constructor
        //Sets firstName and lastName according to the parameters.
        //The default values of the parameters are empty strings.
