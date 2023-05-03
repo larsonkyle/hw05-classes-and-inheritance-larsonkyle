@@ -1,7 +1,11 @@
 #include "billType.h"
 
 void billType::printBill() const{
-      
+  std::cout << "Patient ID: " << ID << "\n";
+  std::cout << "Pharmacy Charges: " << pharmacyCharges << "\n";
+  std::cout << "Room Rent: " << roomRent << "\n";
+  std::cout << "Doctor Fee: " << doctorFee << "\n";
+  std::cout << "Your Total Amount: " << billingAmount() << "\n";
 }
 
 std::string billType::getID() const{

@@ -1,6 +1,7 @@
 #ifndef BILLTYPE_H_
 #define BILLTYPE_H_
 #include <string>
+#include <iostream>
 
 class billType{
   public:
