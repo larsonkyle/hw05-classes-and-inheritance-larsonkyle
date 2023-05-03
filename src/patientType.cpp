@@ -6,7 +6,7 @@ void patientType::print() const{
 
   std::cout << "Patient Name: " << getFirstName()  << " " << getLastName();
 
-  std::cout << "Date of Birth: ";
+  std::cout << "\nDate of Birth: ";
   std::cout << dateOfBirth.getMonth() << "/" << dateOfBirth.getDay() << "/" << dateOfBirth.getYear() << "\n";
 
   std::cout << "Attending Physician: ";
