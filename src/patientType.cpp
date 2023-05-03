@@ -23,7 +23,7 @@ std::string patientType::getID() const{
     return ID;
 }
 
-int patientType::getBirthday() const{
+int patientType::getBirthDay() const{
   return dateOfBirth.getDay();
 }
 
@@ -35,10 +35,10 @@ int patientType::getBirthYear() const{
   return dateOfBirth.getYear();
 }
 
-std::string patientType::getDoctorFname() const{
+std::string patientType::getDoctorFName() const{
   return attendingPhysician.getFirstName();
 }
-std::string patientType::getDoctorLname() const{
+std::string patientType::getDoctorLName() const{
   return attendingPhysician.getLastName();
 }
 std::string patientType::getDoctorSpl() const{
