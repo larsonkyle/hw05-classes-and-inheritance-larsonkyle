@@ -69,11 +69,11 @@ int patientType::getDisYear() const{
   return dischargeDate.getYear();
 }
 
-void patientType::setInfo(std::string id, std::string fName, std::string lName, int bDay, int bMonth, int bYear, std::string docFrName, std::string docLaName, std::string docSpl, int admDay, int admMth, int admYear, int disChDay, int disChMth, int disChYear){
+void patientType::setInfo(std::string id, std::string fName, std::string lName, int bMth, int bDay, int bYear, std::string docFrName, std::string docLaName, std::string docSpl, int admMth, int admDay, int admYear, int disChMth, int disChDay, int disChYear){
   ID = id;
   setName(fName, lName);
   
-  dateOfBirth.setDate(bMonth, bDay, bYear);
+  dateOfBirth.setDate(bMth, bDay, bYear);
   
   attendingPhysician.setName(docFrName, docLaName);
   attendingPhysician.setSpecialty(docSpl);
@@ -87,7 +87,7 @@ void patientType::setID(std::string id){
   ID = id;
 }
 
-void patientType::setBirthDate(int bDay, int bMth, int bYear){
+void patientType::setBirthDate(int bMth, int bDay, int bYear){
   dateOfBirth.setDate(bMth, bDay, bYear);
 }
 void patientType::setDoctorName(std::string fName, std::string lName){
@@ -96,17 +96,17 @@ void patientType::setDoctorName(std::string fName, std::string lName){
 void patientType::setDoctorSpl(std::string spl){
   attendingPhysician.setSpecialty(spl);
 }
-void patientType::setAdmDate(int admDay, int admMth, int admYear){
+void patientType::setAdmDate(int admMth, int admDay, int admYear){
   admitDate.setDate(admMth, admDay, admYear);
 }
-void patientType::setDisDate(int disDay, int disMth, int disYear){
+void patientType::setDisDate(int disMth, int disDay, int disYear){
   dischargeDate.setDate(disMth, disDay, disYear);
 }
 
-patientType::patientType(std::string id, std::string fName, std::string lName, int bDay, int bMonth, int bYear, std::string docFrName, std::string docLaName, std::string docSpl, int admDay, int admMth, int admYear, int disChDay, int disChMth, int disChYear) : personType(fName, lName){
+patientType::patientType(std::string id, std::string fName, std::string lName, int bMth, int bDay, int bYear, std::string docFrName, std::string docLaName, std::string docSpl, int admMth, int admDay, int admYear, int disChMth, int disChDay, int disChYear) : personType(fName, lName){
   ID = id;
   
-  dateOfBirth.setDate(bMonth, bDay, bYear);
+  dateOfBirth.setDate(bMth, bDay, bYear);
   
   attendingPhysician.setName(docFrName, docLaName);
   attendingPhysician.setSpecialty(docSpl);

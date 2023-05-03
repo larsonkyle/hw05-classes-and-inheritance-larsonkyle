@@ -20,6 +20,7 @@ class patientType : public personType{
     int getDisDay() const;
     int getDisMonth() const;
     int getDisYear() const;
+    
     void setInfo(std::string, std::string, std::string, int, int, int, std::string, std::string, std::string, int, int, int, int, int, int);
     void setID(std::string);
     void setBirthDate(int, int, int);
